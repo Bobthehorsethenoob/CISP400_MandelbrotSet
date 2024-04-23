@@ -19,6 +19,7 @@ class ComplexPlane : public Drawable
 public:
 	ComplexPlane(int pixelWidth, int pixelHeight); //: public Drawable();
 //	~ComplexPlane : public Drawable();
+	void draw(RenderTarget& target, RenderStates states) const;
 	void zoomIn();
 	void zoomOut();
 	void setCenter(Vector2i mousePixel);
