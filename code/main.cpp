@@ -70,7 +70,7 @@ int main()
 	//bool update = true;
 
 
-	ComplexPlane real{ pixelWidth, pixelHeight };
+	ComplexPlane real( pixelWidth, pixelHeight );
 
 	Text text;
 

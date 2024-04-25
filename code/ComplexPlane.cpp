@@ -53,7 +53,6 @@ void ComplexPlane::setCenter(Vector2i mousePixel)
 void ComplexPlane::setMouseLocation(Vector2i mousePixel)
 {
 	m_mouseLocation = mapPixelToCoords(mousePixel);
-	m_state = CALCULATING;
 }
 void ComplexPlane::loadText(Text& text)
 {
@@ -75,7 +74,10 @@ void ComplexPlane::updateRender()
 				Uint8 r, g, b;
 				iterationsToRGB(iterations, r, g, b);
 				m_vArray[j + i * m_pixelSize.y].color = { r,g,b };
+				//cout << m_vArray[j + i * m_pixelSize.y].color.r << ',' << m_vArray[j + i * m_pixelSize.y].color.g << ',' << m_vArray[j + i * m_pixelSize.y].color.b << ' ';
+				//cout << (int)r << ',' << (int)g << ',' << (int)b << ' ';
 			}
+			cout << endl;
 		}
 		m_state = DISPLAYING;
 	}
