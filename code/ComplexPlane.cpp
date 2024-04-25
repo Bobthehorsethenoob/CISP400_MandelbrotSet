@@ -55,8 +55,9 @@ void ComplexPlane::setMouseLocation(Vector2i mousePixel)
 }
 void ComplexPlane::loadText(Text& text)
 {
-	ostringstream tempStream;
+	stringstream tempStream;
 	tempStream << "Mandelbrot Set" << endl << "Center: (" << m_planeCenter.x << ',' << m_planeCenter.y << ')' << endl << "Cursor: (" << m_mouseLocation.x << ',' << m_mouseLocation.y << ')' << endl << "Left-click to Zoom in" << endl << "Right-click to Zoom out";
+	text.setString(tempStream.str());
 }
 void ComplexPlane::updateRender()
 {
