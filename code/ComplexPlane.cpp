@@ -77,7 +77,7 @@ void ComplexPlane::updateRender()
 				//cout << m_vArray[j + i * m_pixelSize.y].color.r << ',' << m_vArray[j + i * m_pixelSize.y].color.g << ',' << m_vArray[j + i * m_pixelSize.y].color.b << ' ';
 				//cout << (int)r << ',' << (int)g << ',' << (int)b << ' ';
 			}
-			cout << endl;
+			//cout << endl;
 		}
 		m_state = DISPLAYING;
 	}
