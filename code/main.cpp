@@ -60,10 +60,10 @@ int main()
 	RenderWindow window(vm, "Mandelbrot Set", Style::Default);
 	
 	//resize window for different resolutions
-	View view;
-	view.setSize(pixelWidth, pixelHeight);
-	view.setCenter(pixelWidth / 2, pixelHeight / 2);
-	window.setView(view);
+	//View view;
+	//view.setSize(pixelWidth, pixelHeight);
+	//view.setCenter(pixelWidth / 2, pixelHeight / 2);
+	//window.setView(view);
 	
 	//RainbowScreen rain(pixelWidth, pixelHeight);
 
@@ -85,7 +85,7 @@ int main()
 
 	//Vector2i mousePosition = Mouse::getPosition(window);
 
-	real.loadText(text);
+	//real.loadText(text);
 
 
 
